@@ -47,6 +47,7 @@
 		C2E60D301CA26CEB007D1891 /* TTKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E60D341CA26CEB007D1891 /* TTKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTKitUITests.swift; sourceTree = "<group>"; };
 		C2E60D361CA26CEB007D1891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2E60D421CA2767E007D1891 /* TTKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTKit-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 				C2E60D1B1CA26CEB007D1891 /* Assets.xcassets */,
 				C2E60D1D1CA26CEB007D1891 /* LaunchScreen.storyboard */,
 				C2E60D201CA26CEB007D1891 /* Info.plist */,
+				C2E60D421CA2767E007D1891 /* TTKit-Bridging-Header.h */,
 			);
 			path = TTKit;
 			sourceTree = "<group>";
@@ -399,10 +401,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TTKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crx.TTKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TTKit/TTKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TTKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crx.TTKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TTKit/TTKit-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +489,7 @@
 				C2E60D3B1CA26CEB007D1891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2E60D3C1CA26CEB007D1891 /* Build configuration list for PBXNativeTarget "TTKitTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +498,7 @@
 				C2E60D3E1CA26CEB007D1891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2E60D3F1CA26CEB007D1891 /* Build configuration list for PBXNativeTarget "TTKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +507,7 @@
 				C2E60D411CA26CEB007D1891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
