@@ -24,6 +24,12 @@ class TTKitTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let base64String = "iambase64".base64EncodedString()
+        XCTAssertNotNil(base64String, "base64 encode is Failed")
+        let rawString = base64String?.base64RawString()
+        XCTAssertEqual(rawString, "iambase64", "base64 decode is Failed")
+        let encodeURLString = "https://www.google.com/test?name=陈荣雄".escape()
+        XCTAssertNotNil(encodeURLString, "escape encode is Failed")
     }
     
     func testPerformanceExample() {
