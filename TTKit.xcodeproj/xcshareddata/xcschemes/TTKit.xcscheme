@@ -38,16 +38,6 @@
                ReferencedContainer = "container:TTKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C2E60D2F1CA26CEB007D1891"
-               BuildableName = "TTKitUITests.xctest"
-               BlueprintName = "TTKitUITests"
-               ReferencedContainer = "container:TTKit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
